@@ -34,11 +34,13 @@
 
 ## Design
 
-###Wireframe
+### Wireframe
+
 [[diagram link ](https://www.figma.com/board/2WREnTq826MtDlWde5TveH/LifeQuest?node-id=0-1&node-type=CANVAS)]
 ![diagram image](WireFrame.png)
 
-###Database Model
+### Database Model
+
 [[database model link](https://app.quickdatabasediagrams.com/#/d/Ca0Own)]
 ![database model image](DBModel.png)
 
