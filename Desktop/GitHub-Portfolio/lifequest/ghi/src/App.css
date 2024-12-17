@@ -1,0 +1,444 @@
+
+@font-face {
+    font-family: "Legendaria";
+    src: url("src/fonts/Legendaria.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "PressStart2P";
+    src: url("src/fonts/PressStart2P.ttf") format("truetype");
+}
+
+.App {
+    align-items: center;
+    color: rgb(79, 71, 48);
+    display: flex;
+    flex-direction: column;
+    font-family: "PressStart2P";
+    font-size: calc(10px + 2vmin);
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    text-transform: none;
+    padding-top: 20px;
+    background-color: rgb(225, 215,190);
+    background-image: url("src/assets/sitebg2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center-center;
+    background-attachment: fixed;
+}
+
+.App-header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+form input {
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    color: rgb(79, 71, 48);
+    font-family: "PressStart2P";
+    margin: 5px;
+}
+
+form button {
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    color: rgb(79, 71, 48);
+    font-family: "PressStart2P";
+    text-transform: uppercase;
+}
+
+button {
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    color: black;
+    font-family: "PressStart2P";
+    text-transform: uppercase;
+}
+
+
+.error {
+    color: rgb(230, 0, 75);
+    margin-bottom: 10px;
+}
+
+.signin-error-p,
+.signup-error-container,
+.quest-form-error-p {
+    font-family: "PressStart2P";
+    font-size: 12px;
+    color: rgb(230, 0, 75);
+}
+
+.signup-error-container,
+.signin-error-container,
+.quest-form-error-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 35px;
+    margin-bottom: 5px;
+    padding: 8px;
+    border: 1px solid rgb(230, 0, 75);
+    border-radius: 3px;
+    width: 25vmax;
+    max-width: 275px;
+}
+
+.questlist-error-container {
+    font-family: "PressStart2P";
+    font-size: 15px;
+    color: purple;
+    padding: 8px;
+    margin: 10px;
+    border: 2px solid purple;
+    background-color: #ffffff;
+}
+
+textarea {
+    font-family: "PressStart2P";
+}
+
+.quest-list-container {
+    font-family: "PressStart2P";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.quest-list-filter-button {
+    background-color: rgb(118, 139, 105);
+}
+
+.quest-list-filter-button input:checked {
+    color: rgb(130, 85, 155);
+}
+
+.quest-table-title,
+.quest-detail-title {
+    display: flex;
+    font-family: "Legendaria";
+    margin-bottom: 10px;
+    font-size: 35pt;
+}
+
+.quest-table {
+    width: 55vmax;
+    max-width: 600px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: rgb(210, 200, 170);
+    padding: 80%;
+    font-family: "PressStart2P";
+}
+
+.quest-table-head {
+    border-bottom: 1px solid black;
+    font-family: "PressStart2P";
+    font-size: 60%;
+    height: 25px;
+}
+
+.quest-table-body {
+    margin: 10px;
+    padding: 10px;
+    font-family: "PressStart2P";
+    font-size: 10pt;
+}
+
+.quest-table-desc-p {
+    max-width: 250px;
+    word-wrap: break-word;
+}
+
+.quest-table-navlink {
+    font-family: "PressStart2P";
+    font-size: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.quest-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+/*  -- STRETCH GOALS --
+.scroll-container {
+    position: relative;
+    padding: 25px;
+    background-color: rgb(225, 215, 190);
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.scroll-container::before,
+.scroll-container::after {
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.scroll-container::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background-image: url('src/assets/scroll-top.svg');
+}
+
+.scroll-container::after {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background-image: url('src/assets/scroll-bottom.svg');
+} */
+
+.quest-input-form, .signup-form, .signin-form, .quest-detail-form {
+    width: 25vmax;
+    max-width: 400px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(210, 200, 170);
+}
+
+.quest-input-title,
+.signin-form-username,
+.signin-form-password,
+.signup-form-input {
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 80%;
+    color: rgb(79, 71, 48);
+    margin-bottom: 15px;
+    padding: 5px;
+    font-size: 12px;
+    font-family: "PressStart2P";
+    background-color: rgba(255, 255, 255, 0.223);
+}
+
+.quest-detail-title {
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 80%;
+    color: rgb(79, 71, 48);
+    font-size: 20px;
+}
+
+.quest-form-textarea {
+    background-color: rgba(255, 255, 255, 0.345);
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 80%;
+    color: rgb(79, 71, 48);
+    margin-bottom: 15px;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.signup-form,
+.signin-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.custom-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    align-items: center;
+}
+
+.checkmark {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-color: #ffffff;
+    color: rgb(79, 71, 48);
+    border-radius: 5px;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.custom-checkbox-container:hover input~.checkmark {
+    background-color: rgb(130, 85, 155);
+    align-items: center;
+}
+
+.custom-checkbox-container input:checked~.checkmark {
+    background-color: rgb(130, 85, 155);
+    align-items: center;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    align-items: center;
+}
+
+.custom-checkbox-container input:checked~.checkmark:after {
+    display: block;
+    align-items: center;
+}
+
+.custom-checkbox-container .checkmark:after {
+    align-items: center;
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #000000;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.custom-checkbox-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 45px;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 5%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color:rgb(225, 215, 190);
+    position: relative;
+    z-index: 10;
+}
+
+.home-link {
+    flex-grow: 0;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.nav-links {
+    flex-grow: 1;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    text-decoration: wavy;
+}
+
+Nav {
+    font-family: "Legendaria";
+    background: transparent;
+    font-size: 24pt;
+}
+
+.logout-button {
+    background-color: rgb(118, 139, 105);
+}
+
+.logout-button:hover {
+    background-color: rgb(137, 123, 168);
+}
+
+a:link {
+    color: rgb(79, 71, 48);
+}
+
+a:visited {
+    color: rgb(79, 71, 48);
+}
+
+a:hover {
+    color: rgb(137, 123, 168);
+}
+
+a:active {
+    color: rgb(77, 65, 103);
+}
+
+.quest-input-container {
+    color: rgb(79, 71, 48);
+}
+
+.quest-input-form,
+.signup-form,
+.signin-form {
+    width: 45vmax;
+    max-width: 475px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 3px 3px 7px #00000070;
+    padding: 25px;
+}
+
+.quest-ta-desc {
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 80%;
+    color: rgb(79, 71, 48);
+    padding-bottom: 40px;
+}
+
+.quest-input-button,
+.signin-form-button,
+.signup-form-button {
+    border: 1px solid black;
+    border-radius: 15px;
+    color: rgb(79, 71, 48);
+    padding: 8px;
+    background-color: rgb(225, 215, 190);
+}
+
+.quest-detail-button {
+    border: 1px solid black;
+    border-radius: 7px;
+    color: rgb(79, 71, 48);
+    margin: 2px;
+    padding: 6px;
+    background-color: rgb(225, 215, 190);
+
+}
+
+.signin-form-button,
+.signup-form-button {
+    padding: 5px;
+    margin-top: 15px;
+}
+
+.quest-detail-head {
+    font-family: Legendaria;
+    color: rgb(79, 71, 48);
+    font-size: 20px;
+}
