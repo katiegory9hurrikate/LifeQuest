@@ -20,7 +20,7 @@
 
 -   Run Docker Desktop and then initiate the following command from within your terminal:
 
-          docker compose up -d --build
+  `docker compose up -d --build`
 
 -   Head to http://localhost:5173/ to access the interactive front end of our application
 
