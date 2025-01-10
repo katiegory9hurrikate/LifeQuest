@@ -1,36 +1,51 @@
 # LifeQuest
 
-## Team ThundercatsGEAUX:
-
--   Dylan
-
--   Emily
-
+## Team as of October 2024
 -   Katie
 
--   Mira
+## Team as of September 2024:
+-   Dylan - Python, SQL, FastAPI, Redux
+-   Emily - Python, FastAPI, React/JS
+-   Katie - FastAPI, React/JS, Redux, HTML/CSS, Artwork
+-   Mira - Python, SQL, React/JS
+
+## KPI Tracker/Project Management Dashboard
+[https://docs.google.com/spreadsheets/d/1n6MFF5Ju1rcKoPP_v1_ZlvARzUSyov7H_3dgBDerds0/edit?gid=0#gid=0](https://docs.google.com/spreadsheets/d/1n6MFF5Ju1rcKoPP_v1_ZlvARzUSyov7H_3dgBDerds0/edit?gid=0#gid=0)
 
 ## How to Run
 
--   Git Fork && Clone from the following repository: https://gitlab.com/thundercatsgeaux/lifequest
+-   Git Fork && Clone from the following repository: [https://github.com/katiegory9hurrikate/LifeQuest/](https://github.com/katiegory9hurrikate/LifeQuest)
 
 -   CD into the new directory ${lifequest}
 
 -   Run Docker Desktop and then initiate the following command from within your terminal:
 
-          -docker-compose up -d --build
+          ```docker compose up -d --build```
 
 -   Head to http://localhost:5173/ to access the interactive front end of our application
+
+-   Head to http://localhost:8000/docs/ to access the FastAPI UI for testing
 
 ## Creating your .env file
 
 #### In order for the project to work properly a .env file must be created in the root directory of the project. due to the sensitive nature of the information in the .env file it is included in the .gitignore. You must include your own passwords and signing keys.
 
--   POSTGRES_DB="db_name"
--   POSTGRES_USER={"your user name"}
--   POSTGRES_PASSWORD={"your password for db"}
--   SIGNING_KEY={"your signing key goes here"}
--   DATABASE_URL={"postgresql://{user name}:{password}@db:5432/{db_name"}}
+```
+POSTGRES_DB="db_name"
+POSTGRES_USER={"your user name"}
+POSTGRES_PASSWORD={"your password for db"}
+SIGNING_KEY={"your signing key goes here"}
+DATABASE_URL={"postgresql://{user name}:{password}@db:5432/{db_name"}}
+```
+
+  Example:
+```
+POSTGRES_DB="lifequest_data"
+POSTGRES_USER="testuser"
+POSTGRES_PASSWORD="password"
+SIGNING_KEY="super_secret_key_123"
+DATABASE_URL="postgresql://testuser:password@db:5432/lifequest_data"
+```
 
 ## Design
 
